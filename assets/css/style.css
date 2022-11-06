@@ -84,6 +84,11 @@ div.content div.socials a.instagram {
   color: #fff;
 }
 
+div.content div.socials a.tiktok {
+  background-color: black;
+  color: #fff;
+}
+
 div.content div.socials a.email {
   background-color: slategray;
   color: #fff;
