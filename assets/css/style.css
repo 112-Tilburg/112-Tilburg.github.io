@@ -58,7 +58,7 @@ div.content div.socials {
 
 div.content div.socials a {
   background-color: #f1f1f1;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px 10px;
   text-decoration: none;
   color: #333;
@@ -123,6 +123,6 @@ div.content div.socials a.email {
   }
 
   div.content div.right div.socials {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
