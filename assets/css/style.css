@@ -58,11 +58,11 @@ div.content div.socials {
 
 div.content div.socials a {
   background-color: #f1f1f1;
-  border-radius: 5px auto;
+  border-radius: 5px;
   padding: 5px 10px;
   text-decoration: none;
   color: #333;
-  margin: 0 5px auto;
+  margin: 0 5px;
   transition: opacity 0.3s;
 }
 
@@ -123,6 +123,6 @@ div.content div.socials a.email {
   }
 
   div.content div.right div.socials {
-    margin-top: 30px auto;
+    margin-top: 30px;
   }
 }
