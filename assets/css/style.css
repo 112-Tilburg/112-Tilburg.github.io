@@ -58,11 +58,11 @@ div.content div.socials {
 
 div.content div.socials a {
   background-color: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 5px auto;
   padding: 5px 10px;
   text-decoration: none;
   color: #333;
-  margin: 0 5px;
+  margin: 0 5px auto;
   transition: opacity 0.3s;
 }
 
