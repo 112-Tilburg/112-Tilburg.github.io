@@ -1,0 +1,44 @@
+/* CSS-bestand voor de stijl van de website */
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main li {
+  margin-bottom: 20px;
+}
+
+main img {
+  max-width: 100%;
+}
+
+footer {
+  padding: 20px;
+  background-color: #
