@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Tilburg112</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Tilburg112</h1>
-    <img src="logo.png" alt="Tilburg112 logo">
-  </header>
-  <main>
-    <section>
-      <h2>Laatste nieuws</h2>
-      <div id="articles">
-        <!-- Hier komen de artikelen te staan -->
+  <head>
+    <meta charset="utf-8" />
+    <title>Tilburg112</title>
+    <link rel="icon" href="./assets/logo.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="left">
+        <img src="./assets/logo.png" alt="112Tilburg" />
       </div>
-    </section>
-    <section>
-      <h2>Artikel uploaden</h2>
-      <form id="article-form">
-        <label>Titel:</label>
-        <input type="text" name="title"><br>
-        <label>Inhoud:</label>
-        <textarea name="content"></textarea><br>
-        <button type="submit">Uploaden</button>
-      </form>
-    </section>
-  </main>
-  <script src="scripts.js"></script>
-</body>
+      <div class="right">
+        <h1 class="header">Welkom!</h1>
+        <p>
+          Welkom bij Tilburg112. Onze website is momenteel nog in ontwikkeling.
+          Voor nu kunnen we je enkel doorsturen naar onze sociale media:
+        </p>
+        <div class="socials">
+          <a href="http://tiktok.com/@112tilburg" class="tiktok" target="_blank">Tiktok</a>
+          <a
+            href="https://facebook.com/tilburg112"
+            class="facebook"
+            target="_blank"
+          >
+            Facebook</a
+          >
+          <a
+            href="https://instagram.com/tilburg112?igshid=YmMyMTA2M2Y="
+            class="instagram"
+            target="_blank"
+          >
+            Instagram</a
+          
+          >
+          <a href="mailto:info@tilburg112.tk" class="email">E-mail</a>
+          
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
