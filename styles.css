@@ -1,320 +1,44 @@
-@Import Url('Https://Fonts.Googleapis.Com/Css2?Family=DM+Sans:ital,Wght@0,400;0,500;0,700;1,400;1,500;1,700&Family=Fraunces:ital,Wght@0,500;0,600;0,700;1,600&Display=Swap');
+/* CSS-bestand voor de stijl van de website */
 
-*,
-*:After,
-*:Before {
-  Box-Sizing: Border-Box;
+body {
+  font-family: sans-serif;
 }
 
-Body {
-  Font-Family: "DM Sans", Sans-Serif;
-  Font-Size: 1rem;
-  Line-Height: 1.5;
-  Background-Color: #F8f3eb;
-  Color: #484847;
-  Padding-Bottom: 5rem;
+header {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
-Img {
-  Display: Block;
-  Max-Width: 100%;
+header img {
+  height: 50px;
+  margin-right: 10px;
 }
 
-.Responsive-Wrapper {
-  Width: 95%;
-  Max-Width: 1900px;
-  Margin-Left: Auto;
-  Margin-Right: Auto;
+main {
+  padding: 20px;
 }
 
-.Header {
-  Padding-Right: 1.5rem;
-  Padding-Left: 1.5rem;
-  Padding-Top: 3rem;
-  Padding-Bottom: 4rem;
-  Display: Flex;
-  Justify-Content: Space-Between;
-  Align-Items: Center;
+main h2 {
+  margin-top: 0;
 }
 
-.Header-Left {
-
-  Svg {
-    Max-Height: 40px;
-    Width: Auto;
-  }
+main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.Header-Middle {
-  Display: None;
-  @Media (Min-Width: 1200px) {
-      Display: Block;
-  }
+main li {
+  margin-bottom: 20px;
 }
 
-.Header-Right {
-  Display: Flex;
-  Align-Items: Center;
+main img {
+  max-width: 100%;
 }
 
-.Header-Nav {
-  Display: None;
-  @Media (Min-Width: 1200px) {
-      Display: Block;
-  }
-}
-
-.Header-Link {
-  Color: #000;
-  Text-Decoration: None;
-  Margin-Left: .75rem;
-  Margin-Right: .75rem;
-  Display: None;
-  Font-Weight: 500;
-  Display: Inline-Block;
-  &--Button {
-    Background-Color: #000;
-    Color: #Fff;
-    Padding: .5rem 1.25rem;
-  }
-  
-  @Media (Min-Width: 1200px) {
-  }
-}
-
-.Header-Menu-Button {
-  Margin-Left: .75rem;
-  Border: 0;
-  Padding: 0;
-  Background-Color: Transparent;
-  Font: Inherit;
-  Position: Relative;
-  Padding-Right: 30px;
-  Font-Weight: 500;
-  
-  &:After, &:Before {
-    Content: "";
-    Display: Block;
-    Position: Absolute;
-    Width: 20px;
-    Height: 2px;
-    Background-Color: Currentcolor;
-    Right: 0;
-    Top: 8px;
-  }
-  
-  &:After {
-    Top: 16px;
-    Width: 12px;
-    Right: 8px;
-  }
-}
-
-.Page-Title {
-  Padding-Left: 1.5rem;
-  Padding-Right: 1.5rem;
-  Display: Flex;
-  Justify-Content: Center;
-  H1 {
-    Font-Size: 1.75rem;
-    Font-Weight: 700;
-    Color: #000;
-    Text-Align: Center;
-    Position: Relative;
-    
-    
-    &:After {
-      Content: "";
-      Display: Block;
-      Position: Absolute;
-      Width: 100%;
-      Bottom: -3px;
-      Height: 2px;
-      Background-Color: Currentcolor;
-    }
-  }
-}
-
-.Magazine-Layout {
-  Margin-Top: 3rem;
-  Display: Grid;
-  Grid-Template-Columns: Repeat(5, 1fr);
-  Grid-Row-Gap: 2rem;
-}
-
-.Magazine-Column {
-  Padding: 0 1.5rem;
-  Grid-Column: Span 5;
-  
-  @Media (Min-Width: 1200px) {
-    Grid-Column: Span 1;
-    Border-Right: 1px Solid #CCC;
-    &:Last-Child {
-      Border-Right: None;
-    }
-  }
-  
-  &:Nth-Child(2) {
-    @Media (Min-Width: 1200px) {
-      Grid-Column: Span 2;
-    }
-  }
-}
-
-.Article {
-  & + .Article {
-    Padding-Top: 2rem;
-    Margin-Top: 2rem;
-    Border-Top: 1px Solid #Ccc;
-  }
-}
-
-.Article-Img {
-  & + * {
-    Margin-Top: 1rem;
-  }
-}
-
-.Article-Link {
-  Color: Inherit;
-  Text-Decoration: None;
-}
-
-.Article-Title {
-  Font-Family: "Fraunces", Serif;
-  Font-Weight: 900;
-  Line-Height: 1.25;
-  Color: #000;
-
-  &--Large {
-    Font-Size: 2rem;
-    & + * {
-      Margin-Top: 1.5rem;
-    }
-  }
-
-  &--Medium {
-    Font-Size: 1.5rem;
-    & + * {
-      Margin-Top: 0.75rem;
-    }
-  }
-
-  &--Small {
-    Font-Size: 1.25rem;
-    & + * {
-      Margin-Top: 0.75rem;
-    }
-  }
-}
-
-.Article-Link {
-  Color: Inherit;
-}
-
-.Mark {
-  Background-Color: #Fabea1;
-  &--Secondary {
-    Background-Color: #C2dddf;
-  }
-  
-  &--Tertiary {
-    Background-Color: #F8E177;
-  }
-}
-
-.Article-Excerpt,
-.Article-Creditation {
-  Font-Size: 1.125rem;
-  Line-Height: 1.4;
-  P + P {
-    Margin-Top: 1.5rem;
-  }
-}
-
-.Article-Author {
-  Display: Flex;
-  Flex-Wrap: Wrap;
-  Margin-Top: 1.5rem;
-}
-
-.Article-Author-Img {
-  Width: 3rem;
-  Height: 3rem;
-  Border-Radius: 12px;
-  Background-Color: #323232;
-  Overflow: Hidden;
-  Background-Blend-Mode: Multiply;
-  Img {
-  }
-
-  & + .Article-Author-Info {
-    Margin-Left: 0.5rem;
-  }
-}
-
-.Article-Author-Info {
-  Line-Height: 1.375;
-  Dl {
-    Margin-Top: 0.25em;
-  }
-
-  Dt {
-    Font-Weight: 600;
-  }
-
-  Dd {
-    Font-Size: 0.875em;
-  }
-}
-
-.Article-Category {
-  Font-Weight: 500;
-  Margin-Bottom: 1rem;
-  Display: Block;
-  Svg {
-    Max-Width: 1.5rem;
-    Margin-Right: .5rem;
-    Vertical-Align: Middle;
-  }
-  
-}
-
-.Article-Podcast-Player {
-  Display: Flex;
-  Align-Items: Center;
-  Margin-Bottom: 1rem;
-  Margin-Top: 1.25rem;
-}
-
-.Podcast-Play-Button {
-  Width: 2.25rem;
-  Height: 2.25rem;
-  Border-Radius: 12px;
-  Border: 0;
-  Background-Color: #000;
-  Margin-Right: .5rem;
-  Svg {
-    Max-Width: 1rem;
-    Max-Height: 1rem;
-    Fill: #FFF;
-  }
-}
-
-.Podcast-Progression {
-  Flex: 1;
-  Height: 8px;
-  Border-Radius: 99em;
-  Background-Color: #D9D4CD;
-  Background-Image: Linear-Gradient(To Right, #F99970 30%, #D9D4CD 30%, #D9D4CD 100%)
-}
-
-.Podcast-Time {
-  Font-Weight: 500;
-  Font-Size: 1.125rem;
-  Margin-Left: .5rem;
-}
-
-:Focus {
-  Outline: 0;
-}
+footer {
+  padding: 20px;
+  background-color: #
